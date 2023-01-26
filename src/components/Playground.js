@@ -4,7 +4,7 @@ import img from "../couple.jpeg";
 import { useState, useEffect } from "react";
 
 const Playground = () => {
-    const [ activity, setActivity ] = useState();
+    const [activity, setActivity] = useState('');
     const [userChoice, setUserChoice] = useState(null);
     useEffect(()=>{
         const url = new URL('http://www.boredapi.com/api/activity/')
@@ -32,7 +32,7 @@ const Playground = () => {
         <Form handleSubmit={selectActivity}/>
         <Results show={activity}/>
         <div>
-            <img src={img} />
+            <img src={img} alt="illustration of a couple drinking wine together" />
         </div>
         </>
     );
