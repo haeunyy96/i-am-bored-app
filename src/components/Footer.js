@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            © Haeun Song, 2023
+            © 2023 Haeun Song | Illustration by Val Waters
         </footer>
     );
 }
