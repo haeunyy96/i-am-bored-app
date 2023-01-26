@@ -98,7 +98,25 @@ button:focus {
 .resultDiv {
   margin: 0 100px;
 }
+
 footer {
   margin: 0 0 20px 0;
   font-size: 1.3rem;
+}
+
+@media (max-width: 650px) {
+  .resultDiv {
+      margin: 0 30px;
+  }
+}
+@media (max-width: 450px) {
+  #filtration {
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 10px;
+  }
+  .resultDiv {
+    margin: 0 10px;
+  }
 }
