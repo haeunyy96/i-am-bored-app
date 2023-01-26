@@ -7,7 +7,7 @@ const Playground = () => {
     const [activity, setActivity] = useState('');
     const [userChoice, setUserChoice] = useState(null);
     useEffect(()=>{
-        const url = new URL('http://www.boredapi.com/api/activity/')
+        const url = new URL('https://www.boredapi.com/api/activity/')
         console.log(url)
         url.search = new URLSearchParams({
             type: userChoice
