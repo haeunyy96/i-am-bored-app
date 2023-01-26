@@ -3,7 +3,7 @@ const Results = ({show}) => {
     return (
         <>
             <div className="resultDiv">
-                <p>♡ {here} ♡</p>
+                <p>💛 {here} 💛</p>
             </div>
         </>
     );
