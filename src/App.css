@@ -41,16 +41,18 @@
 
 html {
   background-color: #f1efda;
+  /* overflow-y: hidden; */
 }
 body {
   font-family: 'Gaegu', cursive;
   text-align: center;
-  padding: 0 30px;
+  margin: 0 auto;
+  width: 90%;
 }
 
-h2 {
-  font-size: 4rem;
-  margin-bottom: 30px;
+h1 {
+  font-size: 3.7rem;
+  margin-bottom: 10px;
 }
 
 p {
@@ -59,22 +61,24 @@ p {
 }
 
 img {
-  max-width: 100%;
-  margin: 30px 0;
+  width: 60%;
+  margin:0;
+  /* padding: 10px 0; */
 }
 
 
 label {
-  font-size: 2rem;
-  /* margin-bottom: 30px; */
+  font-size: 1.6rem;
 }
+
 
 #filtration {
   font-family: 'Gaegu', cursive;
   font-size: 1.5rem;
-  border-radius: 15px 15px;
+  border-radius: 12px 12px;
   padding: 5px 10px;
-  margin-right: 10px;
+  margin: 0 auto;
+  display: block;
 }
 
 button {
@@ -82,9 +86,9 @@ button {
   font-size: 1.3rem;
   background-color: transparent;
   border: 1px solid black;
-  border-radius: 15px 15px;
+  border-radius: 12px 12px;
   padding: 4px 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 button:hover,
@@ -99,9 +103,19 @@ button:focus {
   margin: 0 100px;
 }
 
+.result {
+  color: #BB7E5D;
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
 footer {
   margin: 0 0 20px 0;
   font-size: 1.3rem;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
 }
 
 @media (max-width: 650px) {

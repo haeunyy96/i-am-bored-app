@@ -8,7 +8,6 @@ const Playground = () => {
     const [userChoice, setUserChoice] = useState(null);
     useEffect(()=>{
         const url = new URL('https://www.boredapi.com/api/activity/')
-        console.log(url)
         url.search = new URLSearchParams({
             type: userChoice
         })
@@ -17,21 +16,19 @@ const Playground = () => {
                 return response.json();
             })
             .then((data)=>{
-                console.log(data.activity);
                 setActivity(data);
             })
     },[userChoice])
 
     const selectActivity = (event, chosenActivity ) => {
         event.preventDefault();
-        console.log(chosenActivity);
         setUserChoice(chosenActivity);
     }
     return (
         <>
         <Form handleSubmit={selectActivity}/>
         <Results show={activity}/>
-        <div>
+        <div className="imgDiv">
             <img src={img} alt="illustration of a couple drinking wine together" />
         </div>
         </>

@@ -4,13 +4,12 @@ const Form = ({ handleSubmit }) => {
     const [userSelection, setUserSelection] = useState('');
 
     const handleChange = (event) => {
-        console.log(event.target.value);
         setUserSelection(event.target.value);
 
     }
     return (
         <form action="" onSubmit={(event) => { handleSubmit(event, userSelection) }}>
-            <label htmlFor="filtration">Choose a type of activity:</label>
+            <label className="activityLabel" htmlFor="filtration">Choose a type of activity:</label>
             <br></br>
             <select id="filtration" onChange={handleChange} value={userSelection}>
                 <option value="placeholder" disabled>Choose a type of activity:</option>
